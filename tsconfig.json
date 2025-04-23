@@ -8,7 +8,13 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "~~": ["./src/index.ts"]
+    }
   },
   "include": ["src"]
 }

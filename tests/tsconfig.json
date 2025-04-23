@@ -1,4 +1,12 @@
 {
   "extends": "../tsconfig.json",
-  "include": [".", "../vitest.setup.ts"]
+  "include": [".", "../vitest.setup.ts"],
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["../src/*"],
+      "~~": ["../src/index.ts"]
+    }
+  }
 }

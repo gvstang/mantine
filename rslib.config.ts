@@ -19,4 +19,10 @@ export default defineConfig({
     target: 'web',
   },
   plugins: [pluginReact()],
+  resolve: {
+    alias: {
+      '~': './src',
+      '~~': './src/index.ts',
+    },
+  },
 });

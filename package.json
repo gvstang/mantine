@@ -32,9 +32,11 @@
     "@rslib/core": "^0.6.7",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
+    "@types/node": "^22.14.1",
     "@types/react": "^19.1.2",
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.2",
+    "framer-motion": "^12.8.0",
     "globals": "^16.0.0",
     "jsdom": "^26.1.0",
     "prettier": "^3.5.3",
@@ -46,6 +48,7 @@
   "peerDependencies": {
     "@mantine/core": "^7.17.4",
     "@mantine/hooks": "^7.17.4",
+    "framer-motion": "^12.8.0",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   },

@@ -1,16 +1,9 @@
 import { useCallback, useState } from 'react';
-import { getUniqueID } from '~~';
-
-export type RippleType = {
-  key: React.Key;
-  x: number;
-  y: number;
-  size: number;
-};
+import { getUniqueID, RippleType } from '~~';
 
 export interface UseRippleProps {}
 
-export function useRipple(props: UseRippleProps = {}) {
+export function useRipple(props: UseRippleProps) {
   const [ripples, setRipples] = useState<RippleType[]>([]);
 
   const onClick = useCallback((event: React.MouseEvent) => {

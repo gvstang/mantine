@@ -17,15 +17,13 @@ export interface RippleProps extends React.ComponentPropsWithoutRef<'span'> {
 const domAnimation = () =>
   import('framer-motion').then((res) => res.domAnimation);
 
-export const Ripple: React.FC<RippleProps> = (props) => {
-  const {
-    ripples = [],
-    motionProps,
-    color = 'currentColor',
-    style,
-    onClear,
-  } = props;
-
+export function Ripple({
+  ripples = [],
+  motionProps,
+  color = 'currentColor',
+  style,
+  onClear,
+}: RippleProps) {
   return (
     <>
       {ripples.map((ripple) => {
@@ -69,6 +67,6 @@ export const Ripple: React.FC<RippleProps> = (props) => {
       })}
     </>
   );
-};
+}
 
 Ripple.displayName = 'HeroUI.Ripple';

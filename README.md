@@ -1,3 +1,3 @@
-# @gvs/mantine
+# @gvstang/mantine
 
 🚧 Under Construction 🚧

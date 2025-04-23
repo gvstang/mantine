@@ -1,0 +1,7 @@
+:root[data-mantine-color-scheme='light'] body {
+  --mantine-color-body: white;
+}
+
+:root[data-mantine-color-scheme='dark'] body {
+  --mantine-color-body: black;
+}

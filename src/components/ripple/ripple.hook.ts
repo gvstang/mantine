@@ -3,7 +3,7 @@ import { getUniqueID, RippleType } from '~~';
 
 export interface UseRippleProps {}
 
-export function useRipple(props: UseRippleProps) {
+export function useRipple(props: UseRippleProps = {}) {
   const [ripples, setRipples] = useState<RippleType[]>([]);
 
   const onClick = useCallback((event: React.MouseEvent) => {

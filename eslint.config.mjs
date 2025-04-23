@@ -9,4 +9,19 @@ export default [
   ...ts.configs.recommended,
   prettier,
   { ignores: ['dist/'] },
+  {
+    rules: {
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
+          args: 'after-used',
+        },
+      ],
+      '@typescript-eslint/no-empty-object-type': 'off',
+    },
+  },
 ];

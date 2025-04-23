@@ -1,11 +1,11 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { expect, test } from 'vitest';
-import { Button } from '../src/Button';
+import { render } from './render';
 
-test('The button should have correct background color', async () => {
-  render(<Button backgroundColor="#ccc" label="Demo Button" />);
+import { Button } from '../src';
+
+test('The button should render the text Demo Button', async () => {
+  render(<Button>Demo Button</Button>);
   const button = screen.getByText('Demo Button');
-  expect(button).toHaveStyle({
-    backgroundColor: '#ccc',
-  });
+  expect(button).toHaveTextContent('Demo Button');
 });
